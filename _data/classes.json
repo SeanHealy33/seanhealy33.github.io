@@ -1,0 +1,81 @@
+[
+  {
+    "name": "BJJ Kids",
+    "description": "Brazilian Jiu-Jitsu classes for children aged 5-12.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "16:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "16:00"
+      },
+      {
+        "day": "Friday",
+        "time": "16:00"
+      }
+    ],
+    "url": "/classes/bjj-kids"
+  },
+  {
+    "name": "Gi",
+    "description": "Traditional Brazilian Jiu-Jitsu classes with gi.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "18:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "18:00"
+      },
+      {
+        "day": "Friday",
+        "time": "18:00"
+      }
+    ],
+    "url": "/classes/gi"
+  },
+  {
+    "name": "No-Gi BJJ",
+    "description": "Brazilian Jiu-Jitsu classes without gi.",
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "time": "19:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "19:00"
+      }
+    ],
+    "url": "/classes/no-gi-bjj"
+  },
+  {
+    "name": "Women's Only",
+    "description": "Brazilian Jiu-Jitsu classes exclusively for women.",
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "time": "17:30"
+      },
+      {
+        "day": "Thursday",
+        "time": "17:30"
+      }
+    ],
+    "url": "/classes/womens"
+  },
+  {
+    "name": "Open Mat",
+    "description": "Open mat session for all levels.",
+    "schedule": [
+      {
+        "day": "Saturday",
+        "time": "11:00"
+      }
+    ],
+    "url": "/classes/open-mat"
+  }
+]

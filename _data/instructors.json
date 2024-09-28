@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Adriano Francisco Dos Santos",
+    "belt": "Black Belt",
+    "image": "/images/adriano.png",
+    "role": "Head Instructor",
+    "bio": "Adriano has been practicing Brazilian Jiu-Jitsu for over 20 years and is passionate about sharing his knowledge with students of all levels.",
+    "achievements": [],
+    "instagram": "https://www.instagram.com/adrianinholifestyle/",
+  },
+  {
+    "name": "Débora Malandrin",
+    "belt": "Brown Belt",
+    "image": "/images/debroah.jpeg",
+    "role": "Women's Program Director",
+    "bio": "Débora is dedicated to empowering women through Brazilian Jiu-Jitsu and has been instrumental in growing our women's program.",
+    "achievements": [],
+    "instagram": "https://www.instagram.com/deboramalandrin/",
+  }
+]

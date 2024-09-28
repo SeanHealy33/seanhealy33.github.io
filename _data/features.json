@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Expert Instructors",
+    "description": "Our instructors are experts in their field and are dedicated to helping you achieve your goals.",
+    "icon": "fa-solid fa-arrow-trend-up"
+  },
+  {
+    "title": "Flexible Schedule",
+    "description": "We offer flexible scheduling to fit your busy lifestyle.",
+    "icon": "fa-regular fa-calendar-days"
+  },
+  {
+    "title": "Safe Environment",
+    "description": "We provide a safe and supportive environment for you to learn and grow.",
+    "icon": "fa-solid fa-shield"
+  },
+  {
+    "title": "Beginners Welcome",
+    "description": "We welcome beginners and offer a supportive environment for you to learn and grow.",
+    "icon": "fa-solid fa-users"
+  }
+]

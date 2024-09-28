@@ -1,0 +1,50 @@
+---
+layout: default
+title: Our Classes - Athlete A BJJ
+---
+
+<main>
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center mb-12">Our BJJ Classes</h1>
+      <div class="flex flex-wrap justify-center gap-8">
+        {% for class in site.data.classes %}
+          <a href="{{ class.url }}" class="block bg-white rounded-lg shadow-md p-6 flex-1 basis-full md:basis-[calc(50%-1rem)] lg:basis-[calc(33.333%-1rem)] hover:shadow-lg transition duration-300">
+            <h3 class="text-xl font-semibold mb-2">{{ class.name }}</h3>
+            <p class="text-gray-600 mb-4">{{ class.description }}</p>
+            <h4 class="font-semibold mb-2">Schedule:</h4>
+            <ul class="list-disc list-inside">
+              {% for session in class.schedule %}
+                <li>{{ session.day }} at {{ session.time }}</li>
+              {% endfor %}
+            </ul>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Class Schedule</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        {% for day in site.data.schedule %}
+          <div class="bg-white rounded-lg shadow-md p-6 flex-1 basis-full md:basis-[calc(50%-1rem)] lg:basis-[calc(33.333%-1rem)] md:last:mx-auto">
+            <h3 class="text-xl font-semibold mb-2">{{ day.name }}</h3>
+            {% if day.closed %}
+              <p class="text-gray-600">Closed</p>
+            {% else %}
+              {% for class in day.classes %}
+                <div class="mb-2">
+                  <p class="text-gray-600">{{ class.time }} - {{ class.name }}</p>
+                </div>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+  </section>
+
+</main>

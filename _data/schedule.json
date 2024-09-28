@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Monday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "17:00",
+        "name": "Beginner Class"
+      },
+      {
+        "time": "18:30",
+        "name": "Intermediate Class"
+      }
+    ]
+  },
+  {
+    "name": "Tuesday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "17:00",
+        "name": "Beginner Class"
+      },
+      {
+        "time": "18:30",
+        "name": "Intermediate Class"
+      }
+    ]
+  },
+  {
+    "name": "Wednesday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "17:00",
+        "name": "Beginner Class"
+      },
+      {
+        "time": "18:30",
+        "name": "Intermediate Class"
+      }
+    ]
+  },
+  {
+    "name": "Thursday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "17:00",
+        "name": "Beginner Class"
+      },
+      {
+        "time": "18:30",
+        "name": "Intermediate Class"
+      }
+    ]
+  },
+  {
+    "name": "Friday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "17:00",
+        "name": "Beginner Class"
+      },
+      {
+        "time": "18:30",
+        "name": "Intermediate Class"
+      }
+    ]
+  },
+  {
+    "name": "Saturday",
+    "closed": false,
+    "classes": [
+      {
+        "time": "11:00",
+        "name": "Open Mat"
+      }
+    ]
+  },
+  {
+    "name": "Sunday",
+    "closed": true
+  }
+]
