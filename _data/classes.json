@@ -19,7 +19,26 @@
     "url": "/classes/bjj-kids"
   },
   {
-    "name": "Gi",
+    "name": "Beginner Gi",
+    "description": "Traditional Brazilian Jiu-Jitsu classes with gi.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "18:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "18:00"
+      },
+      {
+        "day": "Friday",
+        "time": "18:00"
+      }
+    ],
+    "url": "/classes/gi"
+  },
+  {
+    "name": "Intermediate Gi",
     "description": "Traditional Brazilian Jiu-Jitsu classes with gi.",
     "schedule": [
       {
