@@ -1,0 +1,13 @@
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  {% for review in include.reviews %}
+  <div class="relative overflow-hidden rounded-lg h-96 transition-shadow duration-300 hover:shadow-xl">
+    <img src="{{ review.image }}" alt="{{ review.name }}" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex items-center justify-center p-4">
+      <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md max-w-xs w-full">
+        <p class="mb-4 italic text-gray-800">"{{ review.message }}"</p>
+        <p class="font-bold text-gray-900">- {{ review.name }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -4,14 +4,38 @@ title: About Our Instructors - Athlete A BJJ
 ---
 
 <main>
-  <section class="py-16 bg-gray-100">
+  <section class="h-screen flex items-center justify-center bg-yellow-400">
+    <div class="container mx-auto px-4 flex items-center">
+      <div class="w-full md:w-1/2 pr-0 md:pr-8">
+        <h2 class="text-4xl font-bold mb-8">Welcome to Athlete A BJJ</h2>
+        <p class="text-xl mb-8">
+          At Athlete A BJJ, we're more than just a gym - we're a community dedicated to the art and science of Brazilian Jiu-Jitsu. Our mission is to empower individuals through world-class BJJ training, fostering personal growth, physical fitness, and mental resilience.
+        </p>
+        <p class="text-xl mb-8">
+          Whether you're a complete beginner or an experienced grappler, our expert instructors and supportive environment will help you reach your full potential. We believe in the transformative power of BJJ and are committed to sharing its benefits with everyone who steps onto our mats.
+        </p>
+      </div>
+      <div class="hidden md:block w-1/2">
+        <div class="flex justify-center items-center h-full">
+          <img src="/images/adriano-about.jpeg" alt="Adriano" class="w-3/4 h-1/2 object-cover rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+    <a href="#instructors" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white"
+      onclick="event.preventDefault(); document.querySelector('#instructors').scrollIntoView({ behavior: 'smooth' });">
+      <i class="fas fa-chevron-down text-4xl animate-bounce"></i>
+    </a>
+  </section>
+  
+  <section id="instructors" class="py-16 bg-gray-100">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-center mb-12">Meet Our Instructors</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {% for instructor in site.data.instructors %}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="{{ instructor.image }}" alt="{{ instructor.name }}"
-            class="w-full h-64 object-cover object-center">
+          <div class="h-96">
+            <img src="{{ instructor.image }}" alt="{{ instructor.name }}" class="w-full h-full object-cover object-center">
+          </div>
           <div class="p-6">
             <h2 class="text-2xl font-bold mb-2">{{ instructor.name }}
               <a href="{{ instructor.instagram }}" class="text-gray-600 float-right hover:text-red-600">
@@ -34,15 +58,15 @@ title: About Our Instructors - Athlete A BJJ
     </div>
   </section>
 
-  <section class="py-16 bg-white">
+  <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Our Academy in Action</h2>
-      <div class="relative w-full max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-10">Our Academy in Action</h2>
+      <div class="relative w-full max-w-5xl mx-auto">
         <div class="slideshow-container">
           {% for image in site.data.gallery %}
             <div class="mySlides fade">
-              <img src="{{ image.url }}" alt="{{ image.caption }}" class="w-full object-cover rounded-lg shadow-lg">
-              <div class="text-center mt-2 text-gray-600">{{ image.caption }}</div>
+              <img src="{{ image.url }}" alt="{{ image.caption }}" class="w-auto h-[32rem] max-w-full object-cover rounded-lg shadow-lg mx-auto">
+              <div class="text-center mt-3 text-gray-600 text-lg">{{ image.caption }}</div>
             </div>
           {% endfor %}
         </div>
@@ -52,14 +76,14 @@ title: About Our Instructors - Athlete A BJJ
     </div>
   </section>
 
-  <section class="py-16 bg-red-600 text-white">
+  <section class="py-16 bg-yellow-400 text-black">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-8">Train with the Best</h2>
       <p class="text-xl mb-8 max-w-2xl mx-auto">Experience world-class instruction and take your BJJ journey to the
         next level. Our instructors are dedicated to helping you achieve your goals, whether you're a beginner or an
         advanced practitioner.</p>
       <a href="https://wa.me/+353899885691?text=Hello%20I%27d%20like%20to%20book%20a%20trial%20class"
-        class="bg-yellow-400 hover:bg-yellow-500 text-black text-lg px-8 py-3 rounded-full font-bold transition duration-300">
+        class="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-3 rounded-full font-bold transition duration-300">
         Book a Free Trial Class
       </a>
     </div>
@@ -105,22 +129,50 @@ title: About Our Instructors - Athlete A BJJ
   </style>
 
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    let slideIndex = 0;
+    let slideTimeout;
+    let debounceTimeout;
+
+    showSlides();
 
     function plusSlides(n) {
-      showSlides(slideIndex += n);
+      clearTimeout(slideTimeout);
+      clearTimeout(debounceTimeout);
+      slideIndex += n;
+      showSlides(true);
     }
 
-    function showSlides(n) {
-      let i;
+    function showSlides(clicked = false) {
       let slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
+      for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
       slides[slideIndex-1].style.display = "block";
+      
+      // Set up the next slide change
+      if (!clicked) {
+        slideTimeout = setTimeout(showSlides, 5000);
+      } else {
+        slideTimeout = setTimeout(showSlides, 10000);
+      }
     }
+
+    function debounceSlideChange() {
+      clearTimeout(slideTimeout);
+      clearTimeout(debounceTimeout);
+      debounceTimeout = setTimeout(() => {
+        showSlides();
+      }, 10000); // Wait 10 seconds before resuming automatic slideshow
+    }
+
+    // Add click event listeners to all slides
+    document.addEventListener('DOMContentLoaded', () => {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let slide of slides) {
+        slide.addEventListener('click', debounceSlideChange);
+      }
+    });
   </script>
 </main>

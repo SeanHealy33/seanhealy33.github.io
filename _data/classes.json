@@ -1,7 +1,8 @@
 [
   {
     "name": "BJJ Kids",
-    "description": "Brazilian Jiu-Jitsu classes for children aged 5-12.",
+    "description": "Teach your kids a valuable skill. Builds confidence and discipline and focus.",
+    "image": "/images/kids-splash.jpeg",
     "schedule": [
       {
         "day": "Monday",
@@ -19,8 +20,9 @@
     "url": "/classes/bjj-kids"
   },
   {
-    "name": "Beginner Gi",
-    "description": "Traditional Brazilian Jiu-Jitsu classes with gi.",
+    "name": "Beginner Classes",
+    "description": "Beginner friendly classes, focusing on the fundamentals and core techniques of BJJ.",
+    "image": "/images/beginner-gi-splash.jpeg",
     "schedule": [
       {
         "day": "Monday",
@@ -38,8 +40,9 @@
     "url": "/classes/gi"
   },
   {
-    "name": "Intermediate Gi",
-    "description": "Traditional Brazilian Jiu-Jitsu classes with gi.",
+    "name": "Intermediate & Advanced Classes",
+    "description": "Intermediate classes for those who have some experience with BJJ.",
+    "image": "/images/intermediate-gi-splash.jpeg",
     "schedule": [
       {
         "day": "Monday",
@@ -58,7 +61,8 @@
   },
   {
     "name": "No-Gi BJJ",
-    "description": "Brazilian Jiu-Jitsu classes without gi.",
+    "description": "Clases focused on ground fighting without the gi. Great for MMA preperation and self defense.",
+    "image": "/images/no-gi-splash.jpeg",
     "schedule": [
       {
         "day": "Tuesday",
@@ -72,8 +76,9 @@
     "url": "/classes/no-gi-bjj"
   },
   {
-    "name": "Women's Only",
-    "description": "Brazilian Jiu-Jitsu classes exclusively for women.",
+    "name": "Womens Classes",
+    "description": "Learn self defense while building confidence and strength.",
+    "image": "/images/womens-splash.jpeg",
     "schedule": [
       {
         "day": "Tuesday",
@@ -89,6 +94,7 @@
   {
     "name": "Open Mat",
     "description": "Open mat session for all levels.",
+    "image": "/images/open-mat-splash.jpeg",
     "schedule": [
       {
         "day": "Saturday",

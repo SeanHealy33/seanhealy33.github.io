@@ -1,26 +1,32 @@
 [
   {
     "name": "Bruno Cesar",
-    "message": "I’ve started training Jiu Jitsu here a few weeks ago and couldn’t be happier of my choice. I had never done BJJ before and the beginner classes are great and give me the necessary information and practice to progress my techniques. The environment is amazing too. Everyone is kind, respectful and always ready to help. I really recommend this place if you are thinking about start practicing Brazilian Jiu Jitsu. #OSS"
+    "message": "I started training Jiu Jitsu here a few weeks ago and couldn't be happier with my choice. The beginner classes provide the right guidance and practice to improve my techniques. The environment is amazing—everyone is kind, respectful, and helpful. Highly recommend this place for anyone thinking about starting Brazilian Jiu Jitsu! #OSS",
+    "image": "/images/kids-splash.jpeg"
   },
   {
     "name": "Kamila Duranti",
-    "message": "As a woman, I was initially hesitant to try BJJ, but the Women's Only classes at Athlete A have been amazing. The instructors are patient and encouraging, and I've made great friends here."
+    "message": "As a woman, I was initially hesitant to try BJJ, but the Women's Only classes at Athlete A have been amazing. The instructors are patient and encouraging, and I've made great friends here.",
+    "image": "/images/open-mat-splash.jpeg"
   },
   {
     "name": "Taiane Vieira da Silva",
-    "message": "I was welcomed by a warm, supportive community that helped me learn new techniques and improve my skills under passionate instructors. I've formed genuine friendships with amazing people who share my love for the sport. This place is more than just a gym; it's where you grow as a fighter and as a person. I highly recommend it to anyone wanting to engage in this wonderful sport and join a special community!"
+    "message": "I was welcomed by a supportive community that helped me learn and improve under passionate instructors. I've made genuine friendships with amazing people who share my love for the sport. This gym is more than a training space—it's a place to grow as a fighter and person. I highly recommend it to anyone looking to engage in this sport and join a special community!",
+    "image": "/images/no-gi-action-shot.jpeg"
   },
   {
     "name": "Joao Viana",
-    "message": "Since my first day at the trial , everybody was super friendly and helpful. Adriano the professor is amazing , calm to teach and easy going . Nice and clean structure."
+    "message": "Since my first day at the trial , everybody was super friendly and helpful. Adriano the professor is amazing , calm to teach and easy going . Nice and clean structure.",
+    "image": "/images/intermediate-gi-splash.jpeg"
   },
   {
     "name": "Brian O'Regan",
-    "message": "Great place to learn Jiu-jitsu, Adriano is very patient and all the more experienced guys take time to show the the fundamentals.. I am grateful for all the valuable lessons I've learned here, not just about jiu-jitsu but also about life. "
+    "message": "Great place to learn Jiu-jitsu, Adriano is very patient and all the more experienced guys take time to show the the fundamentals.. I am grateful for all the valuable lessons I've learned here, not just about jiu-jitsu but also about life. ",
+    "image": "/images/beginner-gi-splash.jpeg"
   },
   {
     "name": "James Doran",
-    "message": "Great gym. Spotlessly clean, knowledgable instructors, and friendly environment."
+    "message": "Great gym. Spotlessly clean, knowledgable instructors, and friendly environment.",
+    "image": "/images/open-mat-splash.jpeg"
   }
 ]

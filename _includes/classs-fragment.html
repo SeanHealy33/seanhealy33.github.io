@@ -1,0 +1,17 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {% for class in site.data.classes %}
+  <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+    <div class="h-96 overflow-hidden">
+      <img src="{{ class.image }}" alt="{{ class.name }}" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">{{ class.name }}</h3>
+      <p class="text-gray-600 mb-4">{{ class.description }}</p>
+      <a href="{{ class.url }}"
+        class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+        Learn More
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
